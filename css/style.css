@@ -1,0 +1,150 @@
+:root{
+
+    --green-color:hsl(75, 94%, 57%);
+    --white-color:hsl(0, 0%, 100%);
+    --grey-700-color:hsl(0, 0%, 20%);
+    --grey-800-color:hsl(0, 0%, 12%);
+    --grey-900-color:hsl(0, 0%, 8%);
+    --avatar-size:68.5px;
+    --border-radius:9px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter",sans-serif;
+    font-size: 14px;
+}
+
+body{
+
+    background-color: var(--grey-900-color);
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card{
+    background-color: var(--grey-800-color);
+    width: 90vw;
+    max-width: 308px;
+    height: 80vh;
+    max-height: 480px;
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.avatar{
+    border-radius: 100%;
+    background-size: fill;
+    overflow: hidden;
+    margin-top: 35px;
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+img{
+    width: var(--avatar-size);
+    height:  var(--avatar-size);
+}
+
+.name{
+    font-size: 19.5px;
+    color: var(--white-color);
+    font-weight: 600;
+    margin-top: 23px;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.location{
+    font-size: 11.2px;
+    color: var(--green-color);
+    font-family: 600;
+    margin-top: -4px;
+}
+.position{
+    font-size: 11.6px;
+    color: var(--white-color);
+    font-weight: 200;
+    margin-top: 16px;
+    opacity: 70%;
+}
+
+.buttons{
+    margin-top: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    background-color: var(--grey-700-color);
+    width: 79%;
+    height: 35px;
+    border-radius: 7px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 11.5px;
+    margin-top: 13.5px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.button:hover{
+    background-color: var(--green-color);
+    color: var(--grey-900-color);
+}
+
+.name:hover{
+    /* color: var(--green-color); */
+    opacity: 50%;
+    text-decoration: underline;
+}
+
+.avatar:hover{
+    scale: 1.2;
+    box-shadow: 0 0 0 6px var(--grey-800-color), 0 0 0 8px var(--green-color);
+}
+
+.attribution {
+    width: 90%;
+    font-size: 16px;
+    text-align: center;
+    color: var(--white-color);
+    margin-top: 25px;
+
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--green-color);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.attribution a:hover {
+    color: var(--grey-700-color);
+    text-decoration: underline;
+}
+
+
+
+

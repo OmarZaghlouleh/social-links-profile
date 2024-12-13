@@ -84,7 +84,7 @@ img{
 
 .buttons{
     margin-top: 0px;
-    width: 100%;
+    width: 79%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,8 +93,8 @@ img{
 
 .button{
     background-color: var(--grey-700-color);
-    width: 79%;
-    height: 35px;
+    width: 100%;
+    padding: 11px;
     border-radius: 7px;
     text-align: center;
     display: flex;
